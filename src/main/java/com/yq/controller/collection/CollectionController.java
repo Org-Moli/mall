@@ -71,6 +71,7 @@ public class CollectionController extends BaseController {
 		message = "提交成功";
 		}
 		}catch(Exception e){
+			e.printStackTrace();
 			message = "提交失败";
 		}
 		map.put("result", result);

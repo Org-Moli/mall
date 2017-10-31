@@ -125,10 +125,10 @@
 	<select id="listAll" parameterType="pd" resultType="pd">
 		select 
 		t1.goods_id,	
-		addtime,	
-		user_id,	
-		goods_count,	
-		cart_id,
+		t1.addtime,
+		t1.user_id,
+		t1.goods_count,
+		t1.cart_id,
 		t1.attribute_detail_id,
 		t1.goods_name,
 		t1.goods_pic,

@@ -49,6 +49,7 @@ public class Accesstoken {
 				accesstokenService.edit(token);
 				//System.out.println(jsonObject.getString("access_token"));
 			} catch (Exception e) {
+			    e.printStackTrace();
 				// 获取token失败
 				log.info("获取token失败 errcode:{} errmsg:{}"+ jsonObject.getInt("errcode")+" - " +jsonObject.getString("errmsg"));
 			}

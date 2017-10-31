@@ -150,6 +150,7 @@ public class CartController extends BaseController {
 				map.put("cart_count", cart_count);
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 			result = 0;
 			message = "提交失败！";
 		}
