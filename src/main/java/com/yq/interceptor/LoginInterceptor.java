@@ -49,6 +49,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         {
             return true;
         }
+        logger.info("-------------->>>>>>>>访问地址:" +request.getRequestURL());
 
         // 处理需要微信js的注解
         try

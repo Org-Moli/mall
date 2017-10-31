@@ -140,7 +140,7 @@
 		left join shop_attribute_detail t3 on t1.attribute_detail_id=t3.attribute_detail_id
 		where 1=1
 		<if test="user_id!=null and user_id!=''">
-		and user_id =#{user_id}
+		and t1.user_id =#{user_id}
 		order by addtime desc
 		</if>
 	</select>

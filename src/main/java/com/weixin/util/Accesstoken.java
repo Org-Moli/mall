@@ -57,6 +57,7 @@ public class Accesstoken {
 			accesstoken = token.getString("access_token");
 			
 		}
+		log.info("------------------------->>>>accesstoken:" + accesstoken);
 		return accesstoken;
 	}
 	/**
