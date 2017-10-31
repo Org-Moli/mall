@@ -10,7 +10,7 @@ import com.yq.service.contact.ContactManager;
 
 /** 
  * 说明： 意见反馈
- * 创建人：易钱科技 qq 357788906
+ * 创建人：易钱科技 qq
  * 创建时间：2017-03-01
  * @version
  */

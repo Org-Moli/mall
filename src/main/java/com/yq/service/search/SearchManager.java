@@ -6,7 +6,7 @@ import org.change.util.PageData;
 
 /** 
  * 说明： 搜索热词接口
- * 创建人：壹仟科技 qq 357788906
+ * 创建人：摩里科技 qq
  * 创建时间：2017-02-06
  * @version
  */

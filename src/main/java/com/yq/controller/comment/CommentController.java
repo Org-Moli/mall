@@ -25,7 +25,7 @@ import com.yq.util.StringUtil;
 
 /** 
  * 说明：评价
- * 创建人：壹仟科技 qq 357788906
+ * 创建人：摩里科技 qq
  * 创建时间：2017-01-05
  */
 @Controller

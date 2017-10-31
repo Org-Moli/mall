@@ -10,7 +10,7 @@ import com.yq.service.coupon.CouponManager;
 
 /** 
  * 说明： 优惠券
- * 创建人：易钱科技 qq 357788906
+ * 创建人：易钱科技 qq
  * 创建时间：2017-03-02
  * @version
  */

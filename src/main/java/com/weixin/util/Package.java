@@ -1,7 +1,6 @@
 package com.weixin.util;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
-import org.change.controller.base.BaseController;
 import org.change.util.PageData;
 
 public class Package{
@@ -26,6 +24,8 @@ public class Package{
 		String partner = config.getString("partner");
 		String partnerkey = config.getString("partnerkey");
 		String link =  config.getString("link");
+		String timestamp = (String) map.get("timestamp");
+		String nonceStr = (String) map.get("nonceStr");
 		// 商品描述根据情况修改
 		String body = (String) map.get("goods_name");
 		BigDecimal price = (BigDecimal)map.get("order_total");
@@ -42,14 +42,6 @@ public class Package{
 		//String body = goods_name;
 		String notify_url = link + "/weixin/return";
 		log.info("notify_url=" + notify_url);
-		String currTime = TenpayUtil.getCurrTime();
-		// 8位日期
-		String strTime = currTime.substring(8, currTime.length());
-		// 四位随机数
-		String strRandom = TenpayUtil.buildRandom(4) + "";
-		// 10位序列号,可以自行调整。
-		String nonce_str = strTime + strRandom;
-
 		// 附加数据
 		String attach = "";
 		// 商户订单号
@@ -65,7 +57,7 @@ public class Package{
 		SortedMap<String, Object> packageParams = new TreeMap<String, Object>();
 		packageParams.put("appid", appid);
 		packageParams.put("mch_id", partner);
-		packageParams.put("nonce_str", nonce_str);
+		packageParams.put("nonce_str", nonceStr);
 		packageParams.put("body", body);
 		packageParams.put("attach", attach);
 		packageParams.put("out_trade_no", out_trade_no);
@@ -81,7 +73,7 @@ public class Package{
 		String sign = reqHandler.createSign(packageParams);
 		System.out.println(sign);
 		String xml = "<xml>" + "<appid>" + appid + "</appid>" + "<mch_id>" + partner + "</mch_id>" + "<nonce_str>"
-				+ nonce_str + "</nonce_str>" + "<sign>" + sign + "</sign>" + "<body><![CDATA[" + body + "]]></body>"
+				+ nonceStr + "</nonce_str>" + "<sign>" + sign + "</sign>" + "<body><![CDATA[" + body + "]]></body>"
 				+ "<attach>" + attach + "</attach>" + "<out_trade_no>" + out_trade_no + "</out_trade_no>" +
 				// 金额，这里写的1 分到时修改
 				"<total_fee>" + total_fee + "</total_fee>" + "<spbill_create_ip>" + spbill_create_ip
@@ -94,19 +86,18 @@ public class Package{
 		prepay_id = GetWxOrderno.getPayNo(createOrderURL, xml);
 		System.out.println("prepay_id:"+prepay_id);
 		SortedMap<String, Object> finalpackage = new TreeMap<String, Object>();
-		String timestamp = Sha1Util.getTimeStamp();
 		String packages = "prepay_id=" + prepay_id;
 		log.info("packages=" + packages);
 		finalpackage.put("appId", appid);
 		finalpackage.put("timeStamp", timestamp);
-		finalpackage.put("nonceStr", nonce_str);
+		finalpackage.put("nonceStr", nonceStr);
 		finalpackage.put("package", packages);
 		finalpackage.put("signType", "MD5");
 		String finalsign = reqHandler.createSign(finalpackage);
 		PageData pk = new PageData();
 		pk.put("appId", appid);
 		pk.put("timeStamp", timestamp);
-		pk.put("nonceStr", nonce_str);
+		pk.put("nonceStr", nonceStr);
 		pk.put("package", packages);
 		pk.put("signType", "MD5");
 		pk.put("paySign", finalsign);

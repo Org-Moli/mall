@@ -10,7 +10,7 @@ import com.yq.service.cart.CartManager;
 
 /** 
  * 说明： 购物车
- * 创建人：易钱科技 qq 357788906
+ * 创建人：易钱科技 qq
  * 创建时间：2017-01-05
  * @version
  */

@@ -10,7 +10,7 @@ import com.yq.service.user.ShopUserManager;
 
 /** 
  * 说明： 会员用户
- * 创建人：壹仟科技 qq 357788906
+ * 创建人：摩里科技 qq
  * 创建时间：2016-12-28
  * @version
  */

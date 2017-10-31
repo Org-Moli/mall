@@ -1,11 +1,8 @@
 package com.yq.controller.contact;
 
-import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import javax.annotation.Resource;
 
@@ -16,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.change.controller.base.BaseController;
 import org.change.entity.Page;
-import org.change.util.AppUtil;
 import org.change.util.PageData;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -25,7 +21,7 @@ import com.yq.util.StringUtil;
 
 /** 
  * 说明：意见反馈
- * 创建人：壹仟科技 qq 357788906
+ * 创建人：摩里科技 qq
  * 创建时间：2017-03-01
  */
 @Controller

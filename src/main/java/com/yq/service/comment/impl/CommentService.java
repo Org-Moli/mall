@@ -13,7 +13,7 @@ import com.yq.service.comment.CommentManager;
 
 /** 
  * 说明： 评价
- * 创建人：易钱科技 qq 357788906
+ * 创建人：易钱科技 qq
  * 创建时间：2017-01-05
  * @version
  */

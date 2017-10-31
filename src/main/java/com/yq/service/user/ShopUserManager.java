@@ -6,7 +6,7 @@ import org.change.util.PageData;
 
 /** 
  * 说明： 会员用户接口
- * 创建人：易钱科技 qq 357788906
+ * 创建人：易钱科技 qq
  * 创建时间：2016-12-28
  * @version
  */

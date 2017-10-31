@@ -14,7 +14,7 @@ import com.yq.dao.DaoSupport;
 import com.yq.service.order.OrderDetailManager;
 
 /**
- * 说明： 订单 创建人：易钱科技 qq 357788906 创建时间：2017-01-05
+ * 说明： 订单 创建人：易钱科技 qq  创建时间：2017-01-05
  * 
  * @version
  */

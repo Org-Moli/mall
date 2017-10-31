@@ -25,7 +25,7 @@ import com.yq.util.DatetimeUtil;
 import com.yq.util.StringUtil;
 
 /**
- * 说明：购物车 创建人： qq 357788906 创建时间：2017-01-05
+ * 说明：购物车 创建人： qq  创建时间：2017-01-05
  */
 @Controller
 public class CartController extends BaseController {

@@ -10,7 +10,7 @@ import com.yq.service.address.AddressManager;
 
 /** 
  * 说明： 收货地址
- * 创建人：易钱科技 qq 357788906
+ * 创建人：易钱科技 qq
  * 创建时间：2017-02-21
  * @version
  */

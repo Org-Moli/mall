@@ -10,7 +10,7 @@ import com.yq.service.search.SearchManager;
 
 /** 
  * 说明： 搜索热词
- * 创建人：易钱科技 qq 357788906
+ * 创建人：易钱科技 qq
  * 创建时间：2017-02-06
  * @version
  */

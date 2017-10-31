@@ -26,7 +26,7 @@ import com.google.gson.GsonBuilder;
 import com.yq.service.news.NewsManager;
 
 /**
- * 说明：新闻信息 创建人：壹仟科技 qq 357788906 创建时间：2016-12-29
+ * 说明：新闻信息 创建人：摩里科技 qq  创建时间：2016-12-29
  */
 @Controller
 public class NewsController extends BaseController {
