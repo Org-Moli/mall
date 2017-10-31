@@ -1,0 +1,8 @@
+#######阿里云短信配置######
+aliyun.AccessKeyId=LTAIj6VtMutFxOJu
+aliyun.AccessKeySecret=Dq8GCZW7bfVRm9mjjr9aTGThBSlke7
+#######阿里云短信配置######
+
+#######微信配置###########
+wechat.appid=wx3fcf857ce461ff0d
+#######微信配置###########
