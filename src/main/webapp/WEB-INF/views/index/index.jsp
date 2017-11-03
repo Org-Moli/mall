@@ -11,13 +11,13 @@
 <html>
 <head>
 <base href="<%=basePath%>">
-<title>安e购跨境商城</title>
+<title>摩礼商城-尊享品质生活</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="stylesheet" href="static/lib/weui.min.css">
 <link rel="stylesheet" href="static/css/jquery-weui.css">
-<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 <!--顶部搜索-->
